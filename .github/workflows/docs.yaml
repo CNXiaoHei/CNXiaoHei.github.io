@@ -26,6 +26,9 @@ jobs:
       - name: 安装依赖
         run: npm install --frozen-lockfile
 
+      - name: 安装sass-embedded
+        run: npm install -D sass-embedded
+
       # 运行构建脚本
       - name: 构建 VuePress 站点
         run: npm run docs:build
